@@ -1,0 +1,50 @@
+/*
+	@modCssClasses
+	@customTag: dynamic-icon
+	@cssMod: mod_size2
+	@cssMod: mod_size3
+	@cssMod: mod_size12
+	--theme-transitionDuration 		0.15s
+*/
+
+
+
+
+dynamic-icon {
+	margin-bottom: 4rem;
+	display: block;
+}
+
+dynamic-icon span {
+	display: flex;
+	justify-content: center;
+}
+
+dynamic-icon span svg {
+	width: 4rem;
+	fill: var(--theme-mainFont, rgba(0, 0, 0, 1));
+	transition-property: fill;
+	transition-duration: var(--theme-transitionDuration, 0.15s);
+}
+
+dynamic-icon.mod_size2 span svg {
+	width: 2rem;
+	max-height: 2rem;
+}
+
+dynamic-icon.mod_size3 span svg {
+	width: 3rem;
+	max-height: 3rem;
+}
+
+dynamic-icon.mod_size12 span svg {
+	width: 12rem;
+	max-height: 12rem;
+}
+
+dynamic-icon img {
+	position: absolute;
+	width: 100%;
+	object-fit: cover;
+	object-position: center;
+}
